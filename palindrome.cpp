@@ -1,7 +1,7 @@
 #include <iostream>
 #include <algorithm>
 
-bool isPalindrome(const std::string text)
+bool isPalindrome(const std::string & text)
 {
     std::string textCopy(text);
     std::transform(textCopy.begin(), textCopy.end(), textCopy.begin(), [](unsigned char c){ return std::tolower(c); });
